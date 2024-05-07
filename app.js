@@ -223,7 +223,7 @@ function showSelectedPlayersInfo(selectedPlayers) {
         playerBlock.appendChild(overall); // 評価値
 
         const position = document.createElement('p');
-        position.textContent = "ポジション: " + player.player_positions.split(',')[0];
+        position.textContent = "ポジション: " + player.player_positions;
         playerBlock.appendChild(position); // ポジション
 
         const nationality = document.createElement('p');
