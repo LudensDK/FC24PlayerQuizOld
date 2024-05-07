@@ -75,7 +75,7 @@ function showTopPlayerInfo(topPlayer) {
 
         // チーム名
         const teamName = document.createElement('p');
-        teamName.textContent = `国籍: ${topPlayer.nationality_name}`;
+        teamName.textContent = `${topPlayer.nationality_name}`;
 
         // チームのエンブレム画像
         const NationTeamId = topPlayer.nationality_id; // チームID
@@ -83,7 +83,7 @@ function showTopPlayerInfo(topPlayer) {
         const emblemImgURL = `https://game-assets.fut.gg/2024/nations/${NationTeamId}.png`;
 
         emblemImg.src = emblemImgURL;
-        emblemImg.alt = `国旗: ${topPlayer.nationality_name}`;
+        emblemImg.alt = `${topPlayer.nationality_name}`;
         emblemImg.style.maxWidth = "150px"; // 画像のサイズ
 
         /* section3.appendChild(teamName); // チーム名を追加 */
@@ -108,7 +108,7 @@ function showTopPlayerInfo(topPlayer) {
 
         // チーム名
         const teamName = document.createElement('p');
-        teamName.textContent = `チーム: ${topPlayer.club_name}`;
+        teamName.textContent = `${topPlayer.club_name}`;
 
         // チームのエンブレム画像
         const clubTeamId = topPlayer.club_team_id; // チームID
@@ -116,7 +116,7 @@ function showTopPlayerInfo(topPlayer) {
         const emblemImgURL = `https://cdn.futbin.com/content/fifa24/img/clubs/${clubTeamId}.png`;
 
         emblemImg.src = emblemImgURL;
-        emblemImg.alt = `エンブレム: ${topPlayer.club_name}`;
+        emblemImg.alt = `${topPlayer.club_name}`;
         emblemImg.style.maxWidth = "150px"; // エンブレム画像のサイズ
 
         /* section3.appendChild(teamName); // チーム名を追加 */
