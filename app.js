@@ -244,6 +244,6 @@ function showSelectedPlayersInfo(selectedPlayers) {
         displayArea.innerHTML = ''; // クリア
     });
     selectedPlayersArea.appendChild(resetButton); // リセットボタンを追加
-}, 10000);
+}, 11000);
 
 }
