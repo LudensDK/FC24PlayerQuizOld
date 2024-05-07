@@ -71,6 +71,7 @@ function showTopPlayerInfo(topPlayer) {
     setTimeout(() => {
         const section1 = document.createElement('div');
         section1.id = 'section1';
+        section1.classList.add('fade-in');
 
         // チーム名
         const teamName = document.createElement('p');
@@ -94,6 +95,7 @@ function showTopPlayerInfo(topPlayer) {
     setTimeout(() => {
         const section2 = document.createElement('div');
         section2.id = 'section2';
+        section2.classList.add('fade-in');
         section2.textContent = `${topPlayer.player_positions.split(',')[0]}`;
         sectionContainer.appendChild(section2);
     }, 3000); // 3秒後に表示
@@ -102,6 +104,7 @@ function showTopPlayerInfo(topPlayer) {
     setTimeout(() => {
         const section3 = document.createElement('div');
         section3.id = 'section3';
+        section3.classList.add('fade-in');
 
         // チーム名
         const teamName = document.createElement('p');
@@ -125,6 +128,7 @@ function showTopPlayerInfo(topPlayer) {
     setTimeout(() => {
         const section4 = document.createElement('div');
         section4.id = 'section4';
+        section4.classList.add('fade-in');
 
         const img = document.createElement('img');
         const playerID = topPlayer.player_id;
