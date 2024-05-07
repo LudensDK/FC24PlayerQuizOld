@@ -219,7 +219,7 @@ function showSelectedPlayersInfo(selectedPlayers) {
         playerBlock.appendChild(name); // 名前
 
         const overall = document.createElement('p');
-        overall.textContent = "評価値: " + player.overall;
+        overall.textContent = "総合値: " + player.overall;
         playerBlock.appendChild(overall); // 評価値
 
         const position = document.createElement('p');
