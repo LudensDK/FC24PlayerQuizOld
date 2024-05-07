@@ -1,0 +1,126 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+input, button {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.center-container {
+    padding: 20px; 
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向の中央配置 */
+    align-items: center; /* 垂直方向の中央配置 */
+    height: 100%; /* コンテナの高さを画面全体に */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#enter-area {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#top-player-display {
+    display: flex; /* 横並び */
+    flex-direction: column; /* 縦方向に並べる */
+}
+
+#section1, #section2, #section3 {
+    height: 250px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* 垂直中央 */
+}
+
+#section-container {
+    display: flex; /* 横並び */
+    flex-direction: row;
+    width: 100%; /* コンテナの幅を100%に */
+    text-align: center; 
+    align-items: center;
+}
+
+#section1 {
+    background-color: #add8e6; /* 背景色 */
+    width: 33%; /* 画面全体の三分の一 */
+    justify-content: center; /* 垂直中央 */
+}
+
+#section1 img {
+    max-width: 150px; /* エンブレム画像の最大幅を150pxに設定 */
+}
+
+#section2 {
+    background-color: #98fb98; /* 背景色 */
+    width: 33%; /* 画面全体の三分の一 */
+    justify-content: center; /* 垂直中央 */
+    font-size: 100px;
+}
+
+#section3 {
+    background-color: #ffb6c1; /* 背景色 */
+    width: 33%; /* 画面全体の三分の一 */
+    justify-content: center; /* 垂直中央 */
+}
+
+#section3 img {
+    max-width: 150px; /* エンブレム画像の最大幅を150pxに設定 */
+}
+
+#section4 {
+    background-color: #f0e68c; /* 背景色 */
+    height: 300px; /* 高さ */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 水平中央 */
+    justify-content: center; /* 垂直中央 */
+    font-size: 30px;
+}
+
+/*#top-player-area {
+    border: 2px solid #333; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    
+}*/
+
+#selected-players-area {
+    display: flex; /* 横並び */
+    flex-wrap: wrap; /* フレックスボックスで折り返しを許可 */
+}
+
+.player-block {
+    border: 1px solid #ccc; /* ブロックの境界線 */
+    padding: 10px; /* ブロック内の余白 */
+    text-align: center; /* テキストを中央寄せ */
+    margin-right: 20px; /* ブロック間の余白 */
+    margin-bottom: 20px; /* ブロック下の余白 */
+    width: 150px; /* ブロックの幅 */
+    margin: 0 auto;
+}
+
+.player-block img {
+    max-width: 100px; /* 顔写真の最大幅 */
+}

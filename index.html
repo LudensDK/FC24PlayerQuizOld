@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>FCパックシミュレーター
+    </title>
+    <link rel="stylesheet" href="style.css"> <!-- CSSを読み込む -->
+    <script src="app.js"></script> <!-- JavaScriptファイルを読み込む -->
+</head>
+<body>
+    <h1>FCパックシミュレーター</h1>
+    
+    <div id="enter-area">
+        <label for="min-rating">最低総合値:</label>
+        <input type="number" id="min-rating" step="5" value="80">
+        <label for="num-players">選択人数:</label>
+        <input type="number" id="num-players" value="1">
+    </div>
+    <div class="center-container">
+    <button onclick="startProcess()">スタート</button> <!-- 処理を開始 -->
+    </div>
+    <div id="top-player-display"></div> <!-- トッププレーヤー情報を表示 -->
+    <div id="top-player-area"></div> <!-- トッププレーヤー用エリア -->
+    <div id="selected-players-area"></div> <!-- 選択された選手一覧用エリア -->
+</body>
+</html>
